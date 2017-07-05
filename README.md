@@ -1,9 +1,7 @@
 
 # Portfolio Site
 
-## Live Version 
-
-http://keith.calidrislabs.com
+[Link to Live Site](http://keith.calidrislabs.com)
 
 ## Description
 
