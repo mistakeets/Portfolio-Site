@@ -8,6 +8,10 @@ body {
   margin-bottom: 60px;
 }
 
+.lspace {
+  margin-left: 10px
+}
+
 .footer {
   position: absolute;
   bottom: 0;
