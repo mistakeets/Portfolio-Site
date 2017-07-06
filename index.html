@@ -18,12 +18,20 @@
     </button>
     <a class="navbar-brand" href="#">Keith Oppel</a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav mr-auto">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link disabled" href="#">Projects</a>
-        <a class="nav-item nav-link disabled" href="#">Resume</a>
-        <a class="nav-item nav-link disabled" href="#">About</a>
-      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">About</a>
+        </li>
+      </ul>
       <a href="https://github.com/mistakeets" class="btn btn-outline-success my-2 my-sm-0">Github</a>
       <a href="https://www.linkedin.com/in/keithoppel" class="btn btn-outline-primary my-2 my-sm-0 lspace">LinkedIn</a>
       <a href="https://twitter.com/mistakeets" class="btn btn-outline-info my-2 my-sm-0 lspace">Twitter</a>
@@ -37,6 +45,13 @@
     <p>Test Paragraph</p>
   </div>
 
+  <div class="container projectPage" style="visibility: hidden">
+    <div class="mt-3">
+      <h1>Projects</h1>
+    </div>
+    <p>Project Slideshow will go here.</p>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <span class="text-muted">Contact: keith [at] calidrislabs [dot] com</span>
@@ -46,7 +61,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+  <script src="main.js"></script>
 </body>
 
 </html>
