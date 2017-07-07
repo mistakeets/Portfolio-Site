@@ -1,8 +1,9 @@
 $(document).ready(function() {
-  $("#hide").click(function() {
-    $("p").hide();
-  });
-  $("#Projects").click(function() {
-    $(projectPage).show();
-  });
-});
+  $("#menu li a").on('click', function() {
+    var page = $(this).data('page')
+    $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+      $(this).addClass('hide')
+      $('#pages .page[data-page="' + page + '"]').fadeIn('slow').removeClass('hide')
+    })
+  })
+})
