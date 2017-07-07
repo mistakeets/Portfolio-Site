@@ -37,7 +37,7 @@ body {
 
 .pulse:hover {
   animation: pulse_9602 5s linear infinite;
-  transform-origin: 50% 50%;
+  transform-origin: 10% 50%;
 }
 
 @keyframes pulse_9602 {
