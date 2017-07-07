@@ -4,8 +4,58 @@ html {
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   /* footer */
   margin-bottom: 60px;
+}
+
+em {
+  color: currentColor;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15vmin;
+  font-style: normal;
+  position: relative;
+  text-align: center;
+  width: 20vmin;
+}
+
+em.circle {
+  -webkit-animation: circle-rotate 5s linear infinite;
+  animation: circle-rotate 5s linear infinite;
+  position: relative;
+}
+
+em.circle::before {
+  background: white;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: -.5vmin;
+  left: 3.5vmin;
+  width: 13vmin;
+  height: 13vmin;
+  z-index: -2;
+}
+
+em.circle.left {
+  -webkit-transform-origin: 24vmin 8vmin;
+  transform-origin: 24vmin 8vmin;
+  z-index: -2;
+}
+
+em.circle.right {
+  -webkit-transform-origin: -12vmin 14vmin;
+  transform-origin: -12vmin 14vmin;
+  z-index: -3;
+}
+
+h1 {
+  display: flex;
+  margin: 0;
+  height: 12vmin;
+  width: 100vmin;
+  justify-content: center;
+  position: relative;
 }
 
 .carousel-item.active,
@@ -37,7 +87,19 @@ body {
 
 .pulse:hover {
   animation: pulse_9602 5s linear infinite;
-  transform-origin: 50% 50%;
+  transform-origin: 50% 10%;
+}
+
+@-webkit-keyframes circle-rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@keyframes circle-rotate {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 @keyframes pulse_9602 {
