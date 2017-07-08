@@ -92,6 +92,15 @@ h1 {
   display: none;
 }
 
+.img-filter {
+  filter: grayscale(0%);
+}
+
+.img-filter:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
 .lspace {
   margin-left: 10px
 }
