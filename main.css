@@ -64,6 +64,21 @@ h1 {
   display: block;
 }
 
+.caption-align-one {
+  border-bottom-width: 10px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.caption-align-two {
+  margin-bottom: 113px;
+  color: #000000;
+}
+
+.caption-align-three {
+  margin-bottom: 336px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
